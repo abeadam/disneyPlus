@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Disney+ Ad Blocker",
+  "version": "1.0.3",
+  "description": "Blocks ads from Google AdSense and Disney Advertising domains",
+  "permissions": [
+    "webRequest",
+    "storage",
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Disney+ Ad Blocker"
+  }
+} 

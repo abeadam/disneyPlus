@@ -1,0 +1,78 @@
+Disney+ Ad Blocker
+
+A lightweight Chrome extension that blocks advertisements from Google AdSense and Disney Advertising domains to provide a cleaner browsing experience.
+
+🔒 PRIVACY-FIRST APPROACH
+• No data collection or tracking
+• Operates entirely locally on your device
+• No external server communication
+• No personal information stored
+
+🎯 TARGETED BLOCKING
+Blocks requests to:
+• pagead2.googlesyndication.com (Google AdSense)
+• us-east-1.ads.digital.disneyadvertising.com (Disney Advertising)
+• us-west-2.ads.digital.disneyadvertising.com (Disney Advertising)
+
+✨ FEATURES
+• Clean, modern user interface
+• Enable/disable toggle functionality
+• Real-time status monitoring
+• Network-level and DOM-level blocking
+• Works on all websites
+• Minimal resource usage
+
+🛡️ HOW IT WORKS
+The extension uses Chrome's declarativeNetRequest API to block network requests to advertising domains before they load, combined with content scripts that hide any elements that might slip through.
+
+📱 EASY TO USE
+• Click the extension icon to open the popup
+• Toggle the switch to enable/disable blocking
+• View blocked domains and current status
+• No configuration required
+
+🔧 TECHNICAL DETAILS
+• Manifest V3 compatible
+• Uses declarativeNetRequest for efficient blocking
+• Content scripts for additional DOM-level protection
+• Local storage for user preferences
+
+⚡ PERFORMANCE
+• Lightweight and fast
+• No impact on page loading speed
+• Minimal memory usage
+• Background operation
+
+🎨 USER INTERFACE
+• Beautiful gradient design
+• Intuitive toggle controls
+• Real-time status indicators
+• Clean, professional appearance
+
+📋 PERMISSIONS EXPLAINED
+• webRequest: Monitor network requests for blocking
+• declarativeNetRequest: Apply blocking rules
+• storage: Save user preferences locally
+• host_permissions: Access web pages for blocking
+
+🔍 COMPATIBILITY
+• Chrome 88+
+• All websites
+• Works with other extensions
+• No conflicts with ad blockers
+
+💡 USE CASES
+• Clean browsing experience
+• Faster page loading
+• Reduced distractions
+• Privacy protection
+• Bandwidth savings
+
+⚠️ DISCLAIMER
+This extension is provided as-is for educational and personal use. It blocks specific advertising domains and may affect website functionality that depends on these services.
+
+📞 SUPPORT
+For questions or issues, please contact us through the Chrome Web Store listing.
+
+Version: 1.0.1
+Last Updated: August 2024 
