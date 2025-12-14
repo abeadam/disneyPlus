@@ -1,6 +1,6 @@
 # Disney+ Ad Blocker Chrome Extension
 
-A Chrome extension that blocks ads from Google AdSense and Disney Advertising domains.
+A Chrome extension that blocks ads from Google AdSense, Disney Advertising, and Disney Streaming domains.
 
 ## Features
 

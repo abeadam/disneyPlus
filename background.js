@@ -14,7 +14,7 @@ function setupBlockingRules() {
   console.log('Setting up dynamic blocking rules...');
   
   chrome.declarativeNetRequest.updateDynamicRules({
-    removeRuleIds: [1, 2, 3], // Remove existing rules
+    removeRuleIds: [1, 2, 3, 4], // Remove existing rules
     addRules: [
       {
         id: 1,
@@ -40,6 +40,15 @@ function setupBlockingRules() {
         action: { type: "block" },
         condition: {
           urlFilter: "||us-west-2.ads.digital.disneyadvertising.com",
+          resourceTypes: ["script", "image", "sub_frame", "object", "xmlhttprequest", "other"]
+        }
+      },
+      {
+        id: 4,
+        priority: 1,
+        action: { type: "block" },
+        condition: {
+          urlFilter: "||vod-ftc-na-west-1.media.dssott.com",
           resourceTypes: ["script", "image", "sub_frame", "object", "xmlhttprequest", "other"]
         }
       }
