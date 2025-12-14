@@ -4,8 +4,10 @@ A Chrome extension that blocks ads from Google AdSense and Disney Advertising do
 
 ## Features
 
-- Blocks requests to `https://pagead2.googlesyndication.com`
-- Blocks requests to `https://us-east-1.ads.digital.disneyadvertising.com`
+- Blocks requests to `https://pagead2.googlesyndication.com` (Google AdSense)
+- Blocks requests to `https://us-east-1.ads.digital.disneyadvertising.com` (Disney Advertising)
+- Blocks requests to `https://us-west-2.ads.digital.disneyadvertising.com` (Disney Advertising)
+- Blocks requests to `https://vod-ftc-na-west-1.media.dssott.com` (Disney Streaming)
 - Clean, modern user interface
 - Enable/disable toggle functionality
 - Real-time status monitoring
@@ -42,20 +44,28 @@ A Chrome extension that blocks ads from Google AdSense and Disney Advertising do
 
 The extension uses two methods to block ads:
 
-1. **Network-level blocking**: Uses Chrome's `webRequest` API to block requests to specified domains before they load
+1. **Network-level blocking**: Uses Chrome's `declarativeNetRequest` API to block requests to specified domains before they load
 2. **DOM-level blocking**: Uses content scripts to hide any elements that might have loaded from blocked domains
 
 ## Permissions
 
 The extension requires the following permissions:
-- `webRequest` - To block network requests
-- `webRequestBlocking` - To cancel requests before they complete
+- `webRequest` - To monitor network requests
+- `declarativeNetRequest` - To apply blocking rules to specified domains
 - `storage` - To save user preferences
 - `host_permissions` - To access all URLs for blocking
 
 ## Version
 
-1.0
+1.0.3
+
+## Blocked Domains
+
+The extension currently blocks the following domains:
+- `https://pagead2.googlesyndication.com` - Google AdSense
+- `https://us-east-1.ads.digital.disneyadvertising.com` - Disney Advertising (US East)
+- `https://us-west-2.ads.digital.disneyadvertising.com` - Disney Advertising (US West)
+- `https://vod-ftc-na-west-1.media.dssott.com` - Disney Streaming Services
 
 ## License
 

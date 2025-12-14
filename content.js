@@ -2,7 +2,8 @@
 const BLOCKED_DOMAINS = [
   "pagead2.googlesyndication.com",
   "us-east-1.ads.digital.disneyadvertising.com",
-  "us-west-2.ads.digital.disneyadvertising.com"
+  "us-west-2.ads.digital.disneyadvertising.com",
+  "vod-ftc-na-west-1.media.dssott.com"
 ];
 
 // Function to check if an element should be blocked
